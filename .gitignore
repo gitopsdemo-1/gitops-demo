@@ -1,0 +1,15 @@
+# Secret values and local credentials
+*.secret.yaml
+*.token
+*.key
+*.pem
+config.json
+ksm-config.json
+.env
+ksm-config-secret.yaml
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+
