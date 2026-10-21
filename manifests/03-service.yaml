@@ -7,7 +7,8 @@ metadata:
     app.kubernetes.io/name: nginx-demo
     app.kubernetes.io/part-of: gitops-demo
 spec:
-  type: ClusterIP
+  #type: ClusterIP
+  type: NodePort
   selector:
     app.kubernetes.io/name: nginx-demo
   ports:
@@ -15,4 +16,5 @@ spec:
       protocol: TCP
       port: 80
       targetPort: http
+      nodePort: 30080
 
