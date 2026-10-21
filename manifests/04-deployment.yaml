@@ -22,7 +22,7 @@ spec:
         - name: jfrog-regcred
       containers:
         - name: nginx
-          image: jfrog.company.com/demo/nginx:v1
+          image: trial261020.jfrog.io/gitopsdemo/nginx:v1 
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
