@@ -18,6 +18,8 @@ spec:
         app.kubernetes.io/name: nginx-demo
         app.kubernetes.io/part-of: gitops-demo
     spec:
+      nodeSelector:
+        kubernetes.io/os: linux
       imagePullSecrets:
         - name: jfrog-regcred
       containers:
@@ -52,9 +54,9 @@ spec:
               port: http
             initialDelaySeconds: 10
             periodSeconds: 10
-          securityContext:
-            allowPrivilegeEscalation: false
-            capabilities:
-              drop:
-                - ALL
+              #          securityContext:
+              #            allowPrivilegeEscalation: false
+              #            capabilities:
+              #              drop:
+              #                - ALL
 
