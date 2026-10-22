@@ -7,7 +7,7 @@ metadata:
     app.kubernetes.io/name: nginx-demo
     app.kubernetes.io/part-of: gitops-demo
 spec:
-  replicas: 4
+  replicas: 2
   revisionHistoryLimit: 3
   selector:
     matchLabels:
