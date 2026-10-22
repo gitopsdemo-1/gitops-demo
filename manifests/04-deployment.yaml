@@ -35,6 +35,11 @@ spec:
                 secretKeyRef:
                   name: mysql-secret
                   key: password
+            - name: DB_PASSWORD2
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: password
           resources:
             requests:
               cpu: 50m
